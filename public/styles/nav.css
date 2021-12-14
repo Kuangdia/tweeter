@@ -1,2 +1,34 @@
-<!doctype html>
-!
+/* nav bar header */
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-size: 32px;
+  font-family: "Bungee", sans-serif;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  align-items: flex-end;
+  padding-bottom: 0.5em;
+  z-index: 9999
+}
+
+#nav-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fas.fa-angle-double-down {
+  color: greenyellow;
+  font-size: 24px;
+}
+
+#nav-tweet {
+  font-family: "Source Sans Pro";
+  font-size: 24px;
+}
