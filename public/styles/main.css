@@ -1,6 +1,28 @@
 .main-container {
-  display: flex;
-  align-items: center;
+  margin: auto;
   width: 90%;
+  margin-top: 3em;
   background-color: #f4f1ec;
+  font-family: "Source Sans Pro";
+  font-size: 28px;
+}
+
+.btn.btn-primary {
+  font-family: "Bungee", sans-serif;
+  background-color: #4056A1;
+  color: #FFFFFF;
+}
+
+/* #number-of-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}  */
+
+.main-tweet-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
 }
