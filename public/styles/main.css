@@ -1,0 +1,6 @@
+.main-container {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  background-color: #f4f1ec;
+}
