@@ -1,0 +1,31 @@
+.btn.btn-primary {
+  font-family: "Bungee", sans-serif;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding: 0.2em 0.5em;
+}
+
+.new-tweet {
+  font-weight: bold;
+}
+
+#tweet-text {
+  border: none;
+  border-bottom: 3px solid black;
+  background: none;
+  width: 100%;
+  resize: none;
+  padding: 0.5em 0;
+  margin-bottom: 0.5em;
+}
+
+#tweet-text:focus {
+  outline: none;
+}
+
+
+.counter {
+  font-family: "Bungee", sans-serif;
+  font-weight: bold;
+  float: right;
+}
