@@ -1,19 +1,40 @@
 /* avatar and name */
 
 header#user-profile {
-  position: fixed;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 400px;
   width: 100%;
-  background-image: url("https://wallpaperaccess.com/full/5016039.jpg");
+  background-image: url("https://wallpaperaccess.com/full/57200.jpg");
   font-family: "Source Sans Pro", sans-serif;
   font-style: italic;
+  /* background-size: cover;
+  background-position: center; */
+  /* background-repeat: no-repeat; */
+  animation: animatedBackground 10s linear infinite alternate;
+}
 
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+#animate-area {
+  width: 200px;
+  height: 200px;
+  background-image: url(http://placekitten.com/400/200);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 10s linear infinite alternate;
 }
 
 h2.profile-name {
+  font-family: "Source Sans Pro", sans-serif;
   margin: 0.5em;
   padding: 0em;
   border: 0em;
