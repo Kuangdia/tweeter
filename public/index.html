@@ -65,18 +65,36 @@
           <textarea name="text" rows="1" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div>
             <button type="submit" class="btn btn-primary">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+            <!-- <div id="count-number"> -->
+              <output name="counter" class="counter" for="tweet-text">140</output>
+              <div id="margin-space"></div>
+            <!-- </div> -->
           </div>
         </form>
       </section>
 
       <div class="main-tweet-container">
+        <div class="tweet-header-container">
+          <div id="tweet-user-container">
+            <i class="fas fa-cat fa-2x"></i>
+            <div id="a">Cat Name</div>
+          </div>
+            <div id="b">@Garfield</div>
+        </div>
 
-        <p>what if i write here?</p>
-
-        <p>and here?</p>
+        <text name="text" id="new-tweet-text">This is a test tweet</text>
+        <footer class="footer-tweet-container">
+          <p>10 days ago</p>
+          <div id="footer-icons">
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
 
       </div>
+
+      <p> just to fill out space </p>
 
     </main>
   </body>
