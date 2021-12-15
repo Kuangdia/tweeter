@@ -1,6 +1,5 @@
 /* nav bar header */
 
-
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -15,7 +14,9 @@
   padding-right: 1.5em;
   padding-left: 1.5em;
   padding-bottom: 0.5em;
-  z-index: 9999
+  z-index: 999;
+  position: fixed;
+  top: 0;
 }
 
 #nav-right-side {
