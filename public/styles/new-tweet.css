@@ -51,6 +51,7 @@ output.counter {
   /* padding-top: 75px;
   padding-bottom: 75px; */
   font-family: "Source Sans Pro", sans-serif;
+  box-shadow: 5px 10px #4056A1
 
 }
 
@@ -60,27 +61,27 @@ output.counter {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 1em;
+  padding-left: 0.75em;
   padding-right: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
 
 }
 
-#tweet-user-container {
+.tweet-user-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  font-style: italic;
-  font-weight: bold;
+  text-indent: 7px;
+
 }
 
-#b {
+.userhandler {
   color:rgb(140, 167, 181);
   font-weight: bold;
 }
 
-#new-tweet-text {
+.new-tweet-text {
 
   width: 96%;
   margin: auto;
@@ -89,6 +90,7 @@ output.counter {
   padding-bottom: 1em;
   padding-left: 0.5em;
   font-weight: bold;
+  font-size: 28px;
 
 }
 
@@ -101,13 +103,17 @@ output.counter {
   font-size: 15px;
   font-weight: bold;
   padding-left: 2.25em;
-  padding-right: 2em;
+  padding-right: 2.25em;
   padding-top: 0.4em;
   padding-bottom: 0.75em;
 
 }
 
-#footer-icons {
+.footer-icons {
   color: rgb(75, 75, 176);
   text-indent: 7px;
+}
+
+.footer-icons i:hover {
+  color:darkgoldenrod;
 }
