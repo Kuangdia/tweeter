@@ -34,10 +34,3 @@ body {
   font-family: "Source Sans Pro";
   font-size: 28px;
 }
-
-.main-tweet-container {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  align-items: center;
-}

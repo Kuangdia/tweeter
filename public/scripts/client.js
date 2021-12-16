@@ -69,12 +69,14 @@ $(document).ready( () => {
     <footer class="footer-tweet-container">
       <p>${timeago.format(tweet.created_at)}</p>
       <div class="footer-icons">
-        <i class="fas fa-flag"></i>
-        <i class="fas fa-retweet"></i>
-        <i class="fas fa-heart"></i>
+        <i class="fas fa-poop"></i>
+        <i class="fas fa-comment-dots"></i>
+        <i class="fas fa-paw"></i>
       </div>
     </footer>
-    </div></article>`
+    </div>
+    <div id="margin-space"></div>
+    </article>`
     return $tweet;
   }
 
@@ -100,11 +102,21 @@ $(document).ready( () => {
 
     const input = $("textarea");
     if (input.val().length > 140) {
-      return $("#error").text("Please input no more than 140 characters").fadeIn(100).fadeOut(5000)
+      return $("#error").css({
+        "color": "red",
+        "font-family": "lemon",
+        "font-size": "22px",
+        "padding-bottom": "3em",
+    }).text("❌ Meow? Please input no more than 140 characters!").fadeIn(100).fadeOut(5000)
     }
 
     if (input.val().length <= 0) {
-      return $("#error").text("Please enter text before submitting").fadeIn(100).fadeOut(5000)
+      return $("#error").css({
+        "color": "red",
+        "font-family": "lemon",
+        "font-size": "22px",
+        "padding-bottom": "3em",
+    }).text("❌ Nyaa! Please enter text before submitting!").fadeIn(100).fadeOut(5000)
     }
 
     this.reset();

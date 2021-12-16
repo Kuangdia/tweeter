@@ -1,19 +1,21 @@
 /* avatar and name */
 
 header#user-profile {
-
+  border-bottom: solid rgb(255, 231, 196);
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 400px;
   width: 100%;
-  background-image: url("https://wallpaperaccess.com/full/57200.jpg");
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Arial", sans-serif;
   font-style: italic;
-  /* background-size: cover;
-  background-position: center; */
+  background-image: url("https://wallpaperaccess.com/full/57200.jpg");
+  margin-top: 120px;
+  /* position: relative;
+  top: 120px; */
+  margin-top: 120px;
   /* background-repeat: no-repeat; */
-  animation: animatedBackground 10s linear infinite alternate;
+  animation: animatedBackground 16s linear infinite alternate;
 }
 
 @keyframes animatedBackground {
@@ -34,7 +36,7 @@ header#user-profile {
 }
 
 h2.profile-name {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Coiny", sans-serif;
   margin: 0.5em;
   padding: 0em;
   border: 0em;

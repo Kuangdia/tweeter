@@ -1,6 +1,6 @@
 .btn.btn-primary {
   font-family: "Bungee", sans-serif;
-  background-color: #4056A1;
+  background-color: #ffb777;
   color: #FFFFFF;
   padding: 0.2em 0.5em;
 
@@ -37,6 +37,10 @@ output.counter {
   margin-bottom: 3em;
 }
 
+#margin-tweet {
+  margin-bottom: 2em;
+}
+
 
 
 
@@ -51,9 +55,11 @@ output.counter {
   /* padding-top: 75px;
   padding-bottom: 75px; */
   font-family: "Source Sans Pro", sans-serif;
-  box-shadow: 5px 10px #4056A1
+  box-shadow: 5px 10px #ffb777;
+  word-wrap: break-word;
 
 }
+
 
 .tweet-header-container {
 
@@ -76,9 +82,15 @@ output.counter {
 
 }
 
-.userhandler {
-  color:rgb(140, 167, 181);
+.username {
+  font-family: "Architects Daughter", sans-serif;
   font-weight: bold;
+}
+
+
+.userhandler {
+  color:rgb(237, 193, 140);
+  font-family: "Bungee Inline", sans-serif;
 }
 
 .new-tweet-text {
@@ -89,10 +101,12 @@ output.counter {
   margin-top: 2em;
   padding-bottom: 1em;
   padding-left: 0.5em;
-  font-weight: bold;
-  font-size: 28px;
+  /* font-weight: bold; */
+  font-size: 26px;
+  font-family: "Bubblegum Sans", sans-serif
 
 }
+
 
 .footer-tweet-container {
 
@@ -110,7 +124,7 @@ output.counter {
 }
 
 .footer-icons {
-  color: rgb(75, 75, 176);
+  color: rgb(205, 166, 99);
   text-indent: 7px;
 }
 
