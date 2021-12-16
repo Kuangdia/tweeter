@@ -22,10 +22,12 @@
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
 
   <body>
@@ -60,8 +62,8 @@
 
       <section class="new-tweet">
         <!-- <h2>Compose Tweet</h2> -->
-        <form action="/tweets/" method="POST">
-          <!-- <label for="tweet-text">What are you humming about?</label> -->
+        <form id="submitTweet" action="/tweets/" method="POST">
+          <label for="tweet-text" id="error"></label>
           <textarea name="text" rows="1" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div>
             <button type="submit" class="btn btn-primary">Tweet</button>
@@ -71,38 +73,16 @@
             <!-- </div> -->
           </div>
         </form>
+
+        <div id="tweets-container"></div>
       </section>
 
-      <section class="tweets-section">
-      <div class="main-tweet-container">
-        <div class="tweet-header-container">
-          <div class="tweet-user-container">
-            <i class="fas fa-cat fa-2x"></i>
-            <div class="username">Garfield The Cat</div>
-          </div>
-            <div class="userhandler">@Garfield</div>
-        </div>
+      <p>this is empty space</p>
 
-        <text name="text" class="new-tweet-text">This is a test tweet</text>
-        <footer class="footer-tweet-container">
-          <p>10 days ago</p>
-          <div class="footer-icons">
-            <i class="fas fa-flag"></i>
-            <i class="fas fa-retweet"></i>
-            <i class="fas fa-heart"></i>
-          </div>
-        </footer>
+      <p>this is empty space</p>
 
-      </div>
+      <p>this is empty space</p>
 
-      <p> just to fill out space </p>
-      <p> just to fill out space </p>
-      <p> just to fill out space </p>
-      <p> just to fill out space </p>
-      <p> just to fill out space </p>
-
-
-      </section>
     </main>
   </body>
 </html>
