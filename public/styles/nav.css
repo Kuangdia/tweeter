@@ -28,6 +28,19 @@
 .fas.fa-angle-double-down {
   color: greenyellow;
   font-size: 28px;
+  animation: updown 2s ease infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-18%);
+  }
+  50% {
+    transform: translateY(18%);
+  }
+  100% {
+    transform: translateY(-18%);
+  }
 }
 
 #nav-tweet {
