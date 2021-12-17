@@ -1,5 +1,4 @@
-/* avatar and name */
-
+/*-----Profile Header-----*/
 header#user-profile {
   border-bottom: solid rgb(255, 231, 196);
   display: flex;
@@ -11,11 +10,99 @@ header#user-profile {
   font-style: italic;
   background-image: url("https://wallpaperaccess.com/full/57200.jpg");
   margin-top: 120px;
-  /* position: relative;
-  top: 120px; */
-  margin-top: 120px;
-  /* background-repeat: no-repeat; */
-  animation: animatedBackground 16s linear infinite alternate;
+  animation: animatedBackground 18s linear infinite alternate;
+}
+
+/*-----Responsive Screen for Profile Header-----*/
+@media only screen and (max-width: 319px) {
+  .nav-container {
+    display: none;
+  }
+  header#user-profile {
+    margin-top: 0px;
+  }
+  form#submitTweet {
+    font-size: 14px;
+  }
+  div.main-tweet-container {
+    font-size: 14px;
+  }
+  div.userhandler {
+    font-size: 12px;
+  }
+  text.new-tweet-text {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .nav-container {
+    font-size: 20px;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    height: 100px;
+  }
+  span#nav-tweet {
+    font-size: 12px;
+  }
+  header#user-profile {
+    margin-top: 100px;
+    animation: animatedBackground 20s linear infinite alternate;
+  }
+  form#submitTweet {
+    font-size: 20px;
+  }
+  div.main-tweet-container {
+    font-size: 17px;
+  }
+  div.userhandler {
+    font-size: 13px;
+  }
+  text.new-tweet-text {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 600px) {
+  .nav-container {
+    font-size: 25px;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    height: 100px;
+  }
+  span#nav-tweet {
+    font-size: 14px;
+  }
+  header#user-profile {
+    margin-top: 100px;
+    animation: animatedBackground 20s linear infinite alternate;
+  }
+  text.new-tweet-text {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  header.specific-user#user-profile {
+    height: 400;
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header.specific-user#user-profile {
+    height: 400;
+    margin-top: 110px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  header#user-profile.specific-user {
+    width: 50%;
+    background-image: none;
+    border-bottom: none;
+    padding-top: 100px;
+  }
 }
 
 @keyframes animatedBackground {
@@ -25,14 +112,6 @@ header#user-profile {
   to {
     background-position: 100% 0;
   }
-}
-#animate-area {
-  width: 200px;
-  height: 200px;
-  background-image: url(http://placekitten.com/400/200);
-  background-position: 0px 0px;
-  background-repeat: repeat-x;
-  animation: animatedBackground 10s linear infinite alternate;
 }
 
 h2.profile-name {

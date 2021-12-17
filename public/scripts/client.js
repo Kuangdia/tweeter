@@ -1,53 +1,16 @@
+// Create, Render, GET and POST tweet functions
 $(document).ready( () => {
 
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
-
-/* takes a tweet obj and returns a tweet article element
-   contains full HTML structure of tweet
-*/
-  // const data = [
-  //   {
-  //     "user": {
-  //       "name": "Newton",
-  //       "avatars": "https://i.imgur.com/73hZDYK.png"
-  //       ,
-  //       "handle": "@SirIsaac"
-  //     },
-  //     "content": {
-  //       "text": "If I have seen further it is by standing on the shoulders of giants"
-  //     },
-  //     "created_at": 1461116232227
-  //   },
-  //   {
-  //     "user": {
-  //       "name": "Descartes",
-  //       "avatars": "https://i.imgur.com/nlhLi3I.png",
-  //       "handle": "@rd" },
-  //     "content": {
-  //       "text": "Je pense , donc je suis"
-  //     },
-  //     "created_at": 1461113959088
-  //   }
-  // ]
-
   const renderTweets = function(tweets) {
-    // loops through tweets
     $("#tweets-container").html("");
 
     for (let tweet of tweets) {
-      // console.log("twt", tweet);
-      const $tweet = createTweetElement(tweet)
-      $("#tweets-container").prepend($tweet)
+      const $tweet = createTweetElement(tweet);
+      $("#tweets-container").prepend($tweet);
     }
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
-  }
+  };
 
+  // prevents cross-site scripting
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -80,8 +43,6 @@ $(document).ready( () => {
     return $tweet;
   }
 
-  // renderTweets(data);
-
   const loadTweets = () => {
     $.ajax({
       url: "/tweets/",
@@ -98,16 +59,15 @@ $(document).ready( () => {
   $("#submitTweet").on("submit", function(event) {
     event.preventDefault();
     const serialData = $(this).serialize();
-    // console.log('serialData :', $(this));
-
     const input = $("textarea");
+
     if (input.val().length > 140) {
       return $("#error").css({
         "color": "red",
         "font-family": "lemon",
         "font-size": "22px",
         "padding-bottom": "3em",
-    }).text("❌ Meow? Please input no more than 140 characters!").fadeIn(100).fadeOut(5000)
+      }).text("❌ Meow? Please input no more than 140 characters!").fadeIn(100).fadeOut(5000);
     }
 
     if (input.val().length <= 0) {
@@ -116,20 +76,15 @@ $(document).ready( () => {
         "font-family": "lemon",
         "font-size": "22px",
         "padding-bottom": "3em",
-    }).text("❌ Nyaa! Please enter text before submitting!").fadeIn(100).fadeOut(5000)
+      }).text("❌ Nyaa! Text field cannot be empty!").fadeIn(100).fadeOut(5000);
     }
 
     this.reset();
-    $("output.counter").text(140)
-
-    console.log("form submitted")
+    $("output.counter").text(140);
 
     $.post("/tweets/", serialData, () => {
     loadTweets();
     })
   })
-
-
-
 })
 

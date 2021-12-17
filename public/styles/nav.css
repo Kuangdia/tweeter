@@ -1,5 +1,4 @@
-/* nav bar header */
-
+/*-----Nav Bar-----*/
 .nav-container {
   display: flex;
   flex-direction: row;
@@ -11,8 +10,8 @@
   color: #FFFFFF;
   font-size: 45px;
   font-family: "Bungee", sans-serif;
-  padding-right: 1.5em;
-  padding-left: 1.5em;
+  padding-right: 1.05em;
+  padding-left: 1.05em;
   padding-bottom: 0.5em;
   z-index: 999;
   position: fixed;
@@ -47,3 +46,31 @@
   font-family: "Lemon";
   font-size: 24px;
 }
+
+
+
+/*-----Responsive Screen for Nav Bar-----*/
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+  .nav-container {
+    font-size: 28px;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    height: 100px;
+  }
+  span#nav-tweet {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-container {
+    font-size: 36px;
+    padding-right: 0.75em;
+    padding-left: 0.75em;
+    height: 110px;
+  }
+  span#nav-tweet {
+    font-size: 20px;
+  }
+}
+

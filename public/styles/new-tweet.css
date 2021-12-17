@@ -1,9 +1,9 @@
+/*-----Compose Tweet Container-----*/
 .btn.btn-primary {
   font-family: "Bungee", sans-serif;
   background-color: #ffb777;
   color: #FFFFFF;
   padding: 0.2em 0.5em;
-
 }
 
 .new-tweet {
@@ -15,63 +15,94 @@
   border-bottom: 3px solid black;
   background: none;
   width: 100%;
-  resize: none;
   padding: 0.5em 0;
   margin-bottom: 0.5em;
 }
 
 #tweet-text:focus {
   outline: none;
-
 }
 
 output.counter {
-
   font-family: "Bungee", sans-serif;
   font-weight: bold;
   float: right;
-
-}
-
-#margin-space {
-  margin-bottom: 3em;
-}
-
-#margin-tweet {
-  margin-bottom: 2em;
 }
 
 
 
+/*-----Responsive Screen for Compose Tweet Container-----*/
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  form#submitTweet {
+    font-size: 18px;
+  }
+  div.main-tweet-container {
+    font-size: 18px;
+  }
+  div.userhandler {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 421px) and (max-width: 767px) {
+  form#submitTweet {
+    font-size: 24px;
+  }
+  div.main-tweet-container {
+    font-size: 24px;
+  }
+  div.userhandler {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  form#submitTweet {
+    padding-top: 200px;
+    margin-right: 50px;
+  }
+  div.main-tweet-container {
+    margin-right: 50px;
+  }
+} 
 
 
+
+/*-----Main Tweets Container-----*/
+.main-container {
+  margin: auto;
+  width: 90%;
+  margin-top: 3em;
+  background-color: #f4f1ec;
+  font-family: "Source Sans Pro";
+  font-size: 28px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
 
 .main-tweet-container {
-
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border: solid;
-  /* padding-top: 75px;
-  padding-bottom: 75px; */
-  font-family: "Source Sans Pro", sans-serif;
-  box-shadow: 5px 10px #ffb777;
+  overflow-wrap: break-word;
   word-wrap: break-word;
-
 }
 
+.main-tweet-container:hover {
+  box-shadow: 5px 10px #ffb777;
+}
 
 .tweet-header-container {
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-left: 0.75em;
-  padding-right: 1em;
   padding-top: 1em;
+  padding-right: 1em;
   padding-bottom: 1em;
-
+  padding-left: 0.75em;
 }
 
 .tweet-user-container {
@@ -79,7 +110,6 @@ output.counter {
   flex-direction: row;
   align-items: center;
   text-indent: 7px;
-
 }
 
 .username {
@@ -87,29 +117,26 @@ output.counter {
   font-weight: bold;
 }
 
-
 .userhandler {
   color:rgb(237, 193, 140);
   font-family: "Bungee Inline", sans-serif;
 }
 
 .new-tweet-text {
-
   width: 96%;
   margin: auto;
   border-bottom: 3px solid black;
   margin-top: 2em;
   padding-bottom: 1em;
   padding-left: 0.5em;
-  /* font-weight: bold; */
   font-size: 26px;
-  font-family: "Bubblegum Sans", sans-serif
+  font-family: "Bubblegum Sans", sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 
 }
 
-
 .footer-tweet-container {
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -118,9 +145,8 @@ output.counter {
   font-weight: bold;
   padding-left: 2.25em;
   padding-right: 2.25em;
-  padding-top: 0.4em;
+  padding-top: 0.4em 2.25em 0.75em 2.25em;
   padding-bottom: 0.75em;
-
 }
 
 .footer-icons {

@@ -3,6 +3,9 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <!-- <meta name="viewport" content="width=device-width, min-width=360, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=320, user-scalable=no">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -29,50 +32,39 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-
       <div class="nav-container">
-
         <div>
           <span id="nav-title">🐾Catchee</span>
         </div>
-      
         <div id="nav-right-side">
           <span id="nav-tweet"><b>Write</b> a new Catchee</span>
           <i class="fas fa-angle-double-down"></i>
         </div>
-
       </div>
-
     </nav>
 
-    <header id="user-profile">
-
+    <header class="specific-user" id="user-profile">
       <div id="profile-avatar">
         <img src="/images/profile-hex.png"> 
       </div>
-          <h2 class="profile-name">Kit Cat</h2>
+        <h2 class="profile-name">Kit Cat</h2>
+        <div class="about-me"></div>
     </header>
 
     <!-- Page-specific (main) content here -->
     <main class="main-container">
-
       <section class="new-tweet">
-        <!-- <h2>Compose Tweet</h2> -->
         <form id="submitTweet" action="/tweets/" method="POST">
           <label for="tweet-text" id="error"></label>
           <textarea name="text" rows="1" id="tweet-text" placeholder="What are you Meow Meow about?"></textarea>
           <div>
             <button type="submit" class="btn btn-primary">CatchMe!</button>
-            <!-- <div id="count-number"> -->
-              <output name="counter" class="counter" for="tweet-text">140</output>
-              <div id="margin-space"></div>
-            <!-- </div> -->
+            <output name="counter" class="counter" for="tweet-text">140</output>
+            <div id="margin-space"></div>
           </div>
         </form>
-
         <div id="tweets-container"></div>
       </section>
-
     </main>
   </body>
 </html>
