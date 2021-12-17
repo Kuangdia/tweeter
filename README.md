@@ -1,6 +1,6 @@
 # Tweeter Project
 
-Tweeter is a simple cat themed version of a single-page Twitter clone. This Tweeter project is responsive to desktop, ipad, and mobile devices. Now cat lovers can enjoy tweeting or in this case, catching even more!
+Tweeter is a simple cat themed, single-page Twitter clone. This Tweeter project is responsive to desktop, ipad, and mobile devices. Now cat lovers can enjoy tweeting or in this case, catching even more!
 
 # Final Product
 
@@ -23,4 +23,4 @@ Tweeter is a simple cat themed version of a single-page Twitter clone. This Twee
 - Body-parser
 - Chance
 - Md5
-- Timeago.js": "^4.0.2"
+- Timeago.js
