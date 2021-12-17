@@ -4,8 +4,9 @@ Tweeter is a simple cat themed version of a single-page Twitter clone. This Twee
 
 # Final Product
 
-!["IPAD device of Catchee"](https://github.com/Kuangdia/tweeter/blob/master/docs/catchee.png)
-!["Sample tweets"](https://github.com/Kuangdia/tweeter/blob/master/docs/tweets.png)
+![IPAD device of Catchee](https://github.com/Kuangdia/tweeter/blob/master/docs/catchee.png)
+![Sample tweets](https://github.com/Kuangdia/tweeter/blob/master/docs/tweets.jpg)
+![My Cat display](https://github.com/Kuangdia/tweeter/blob/master/public/images/cat.gif)
 
 ## Getting Started
 
